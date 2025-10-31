@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brew Bliss Café</title>
+  <style>
+    :root {
+      --bg: #f5f0e6;
+      --primary: #4b2e2e;
+      --secondary: #6b3e3e;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: var(--bg);
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: var(--secondary);
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    section, article {
+      margin-bottom: 24px;
+      background: var(--card);
+      border: 1px solid #e8e0d3;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    .menu {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+    }
+    .menu ul { list-style: square; }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .price-table th, .price-table td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    .media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    video, audio {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #000;
+    }
+    .logo {
+      width: 60px;
+      vertical-align: middle;
+    }
+    .contact-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 12px;
+      max-width: 520px;
+      margin: 0 0 16px 0;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 20px;
+    }
+    small.note { color: #555; display: block; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- SVG Logo -->
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-label="Brew Bliss Café logo">
+    <circle cx="32" cy="32" r="30" fill="#6b3e3e"/>
+    <text x="32" y="38" font-size="20" text-anchor="middle" fill="white">☕</text>
+  </svg>
+  <h1>Brew Bliss Café</h1>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <!-- Home with image -->
+  <section id="home">
+    <div class="hero">
+      <article>
+        <h2>Welcome to Brew Bliss Café</h2>
+        <p>Enjoy the finest coffee blends with a cozy atmosphere. Freshly brewed, just for you.</p>
+        <p>From single-origin espresso to creamy lattes, we craft each cup with care.</p>
+      </article>
+      <!-- Image tag (save a local file as images/coffee.jpg) -->
+      <figure>
+        <img src="C:\Users\Ramandeep Singh\OneDrive\Pictures\coffee image.png" alt="A steaming cup of coffee on a wooden table">
+        <figcaption><small>Our signature morning brew.</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Menu Section with List -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+      <ul>
+        <li>Espresso</li>
+        <li>Cappuccino</li>
+        <li>Latte</li>
+        <li>Mocha</li>
+      </ul>
+      <ul>
+        <li>Cold Brew</li>
+        <li>Americano</li>
+        <li>Macchiato</li>
+        <li>Hot Chocolate</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Price table -->
+  <section>
+    <h2>Price List</h2>
+    <table class="price-table">
+      <tr>
+        <th>Beverage</th>
+        <th>Small</th>
+        <th>Large</th>
+      </tr>
+      <tr>
+        <td>Espresso</td>
+        <td>$2</td>
+        <td>$3</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>$3</td>
+        <td>$4</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>$3.5</td>
+        <td>$4.5</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Brew Bliss Café</h2>
+    <article>
+      <p>We source ethically grown beans and celebrate slow, mindful coffee. Sit back, sip, and savor the moment.</p>
+    </article>
+  </section>
+
+  <!-- Video and Music -->
+  <section>
+    <h2>Our Coffee Ad</h2>
+    <div class="media">
+      <!-- Use local file for best reliability: media/coffee-ad.mp4 -->
+      <div>
+        <video
+          controls
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="images/coffee.jpg">
+          <source src="C:\Users\Ramandeep Singh\Downloads\2909914-uhd_3840_2024_24fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <small class="note">Tip: Video autoplays only when muted. Unmute after it starts.</small>
+      </div>
+
+      <!-- Use local file for best reliability: media/coffee-music.mp3 -->
+      <div>
+        <audio
+          controls
+          autoplay
+          loop
+          preload="auto">
+          <source src="C:\Users\Ramandeep Singh\Downloads\coffee-time-short-ver-187142.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <small class="note">If audio doesn’t start, click play. Some browsers require user interaction.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-card">
+      <p><strong>Customer Care:</strong>
+        <a href="tel:+919876543210">+91-98765-43210</a>
+      </p>
+      <p><strong>Email:</strong>
+        <a href="mailto:care@brewblisscafe.example">care@brewblisscafe.example</a>
+      </p>
+    </div>
+
+    <form action="#" method="post">
+      <label for="name">Name:</label><br>
+      <input id="name" type="text" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input id="email" type="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Brew Bliss Café. All rights reserved.</p>
+  <p>Customer Care: <a href="tel:+919876543210">+91-98765-43210</a></p>
+</footer>
+
+</body>
+</html>
